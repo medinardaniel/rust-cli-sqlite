@@ -1,25 +1,24 @@
-install:
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+rust-version:
+	@echo "Rust command-line utility versions:"
+	rustc --version
+	cargo --version
+	rustfmt --version
+	rustup --version
+	clippy-driver --version
+
+format:
+	cargo fmt --quiet
+	
+lint:
+	cargo clippy --quiet
 
 test:
-	python -m pytest -vv --cov=main --cov=mylib test_*.py
+	cargo test --quiet
 
-format:	
-	black *.py 
+run:
+	cargo run
 
-lint:
-	#disable comment to test speed
-	#pylint --disable=R,C --ignore-patterns=test_.*?py *.py mylib/*.py
-	#ruff linting is 10-100X faster than pylint
-	ruff check *.py mylib/*.py
+release:
+	cargo build --release
 
-container-lint:
-	docker run --rm -i hadolint/hadolint < Dockerfile
-
-refactor: format lint
-
-deploy:
-	#deploy goes here
-		
-all: install lint test format deploy
+all: format lint test run

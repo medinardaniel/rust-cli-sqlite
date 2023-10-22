@@ -1,28 +1,27 @@
-# IDS Mini Project 5: CRUD Operations with SQLite
-
+# Rust CLI Binary with SQLite
 #### By Daniel Medina
 ![ccid workflow](https://github.com/medinardaniel/ids706-miniproj-5/actions/workflows/cicd.yml/badge.svg)
 
 ## Project Description
-In this project, I created a SQLite database using a HateCrimes CSV file obtained from https://github.com/emorisse/FBI-Hate-Crime-Statistics/blob/master/2013/table13.csv.
+In this project, I perform CRUD operations using Rust in a SQLite database HateCrimesDB.
 
-I perform the following tasks:
-* [E] Extract a dataset from a URL.
-* [T] Transform the data by cleaning, filtering, enriching, etc to get it ready for analysis.
-* [L] Load the transformed data into a SQLite database table using Python's sqlite3 module.
-* [Q] Write and execute SQL queries on the SQLite database to analyze and retrieve insights from the data.
+I perform the following queries:
+* [C] Create the following new record in the dataset:
+Record { state: "North Carolina", agency_type: "City", agency_name: "Durham Police Department", race: "Hispanic", religion: "Atheist", sexual_orientation: "Straight", ethnicity: "Hispanic", disability: "Physical", gender: "Male", gender_identity: "Cisgender", q1: "Yes", q2: "No", q3: "No", q4: "No", population: "" }
+* [R] Read the record I just inserted from the dataset
+* [U] Update the record field "q1" from "Yes" to "No"
+* [D] Delete the created record
 
-For the query [Q] portion, I perform the following queries:
-* [C] Create a new row in the dataset for Durham, North Carolaina
-* [R] Read the last five rows of the dataset
-* [U] Update the population for the Durham, North Carolina created record 
-* [D] Delete the Durham, North Carolina created record
+Testing:
+To run tests, execute "cargo test" command on the terminal.
 
-In addition, I made main.py a command line tool using Python Fire. The tool can run the following commands:
-* [r] Read the top 5 rows
-* [c] Create a new record
-* [u] Update the newly created record
-* [d] Delete the newly created record
+How to run:
+Once in the rust-cli-sqlite directory, execute "cargo run" command on the terminal.
 
-In the test_main.py file, I ensure that my script can succesfully create and delete a record.
+Project Dependencies:
+* reqwest = "0.11"
+* rusqlite = "0.25.0"
+
+### Use of GitHub Copilot
+As a brand new Rustacean, I leaned into GitHub copilot to guide me throughout the development process. I prompted GitHub Copitlot autocomplete by writing prompts through commentary. In addition, I used GithHub Copilot Chat to help me write some of the CRUD operation functions in lib.rs and ensure I was able to call them from my main.rs file.
 
