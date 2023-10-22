@@ -2,9 +2,9 @@ name: Rust CI
 
 on:
   push:
-    branches: [master]  # adjust if you want it to run on other branches as well
+    branches: [main]  # adjust if you want it to run on other branches as well
   pull_request:
-    branches: [master]  # adjust if you want it to run on PRs to other branches
+    branches: [main]  # adjust if you want it to run on PRs to other branches
 
 jobs:
   rust_checks:
