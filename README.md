@@ -1,6 +1,6 @@
 # Rust CLI Binary with SQLite
 #### By Daniel Medina
-![build workflow](https://github.com/medinardaniel/rust-cli-sqlite/actions/workflows/rust_build.yml/badge.svg)
+![build-release workflow](https://github.com/medinardaniel/rust-cli-sqlite/actions/workflows/rust_build_release.yml/badge.svg)
 ![lint workflow](https://github.com/medinardaniel/rust-cli-sqlite/actions/workflows/rust_lint.yml/badge.svg)
 ![test workflow](https://github.com/medinardaniel/rust-cli-sqlite/actions/workflows/rust_test.yml/badge.svg)
 
