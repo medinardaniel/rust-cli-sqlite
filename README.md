@@ -9,15 +9,18 @@ In this project, I perform CRUD operations using Rust in a SQLite database HateC
 
 I perform the following queries:
 * [C] Create the following new record in the dataset:
+
 Record { state: "North Carolina", agency_type: "City", agency_name: "Durham Police Department", race: "Hispanic", religion: "Atheist", sexual_orientation: "Straight", ethnicity: "Hispanic", disability: "Physical", gender: "Male", gender_identity: "Cisgender", q1: "Yes", q2: "No", q3: "No", q4: "No", population: "" }
 * [R] Read the record I just inserted from the dataset
 * [U] Update the record field "q1" from "Yes" to "No"
 * [D] Delete the created record
 
 Testing:
+
 To run tests, execute "cargo test" command on the terminal.
 
 How to run:
+
 Once in the rust-cli-sqlite directory, execute "cargo run" command on the terminal.
 
 Project Dependencies:
