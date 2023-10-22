@@ -1,6 +1,8 @@
 # Rust CLI Binary with SQLite
 #### By Daniel Medina
-![ccid workflow](https://github.com/medinardaniel/ids706-miniproj-5/actions/workflows/cicd.yml/badge.svg)
+![build workflow](https://github.com/medinardaniel/rust-cli-sqlite/actions/workflows/rust_build.yml/badge.svg)
+![lint workflow](https://github.com/medinardaniel/rust-cli-sqlite/actions/workflows/rust_lint.yml/badge.svg)
+![test workflow](https://github.com/medinardaniel/rust-cli-sqlite/actions/workflows/rust_test.yml/badge.svg)
 
 ## Project Description
 In this project, I perform CRUD operations using Rust in a SQLite database HateCrimesDB.
