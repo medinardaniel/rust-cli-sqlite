@@ -27,6 +27,12 @@ Project Dependencies:
 * reqwest = "0.11"
 * rusqlite = "0.25.0"
 
+### Instructions: Downloading the Rust Binary
+1. Go to the "Actions" tab on the GitHub repo
+2. On the left-hand side of the screen, select "Rust Build and Release" under "Actions"
+3. Select the most recent workflow run
+4. Scroll to the bottom and click on the rust-cli-sqlite-binary to download
+
 ### Use of GitHub Copilot
 As a brand new Rustacean, I leaned into GitHub copilot to guide me throughout the development process. I prompted GitHub Copitlot autocomplete by writing prompts through commentary. In addition, I used GithHub Copilot Chat to help me write some of the CRUD operation functions in lib.rs and ensure I was able to call them from my main.rs file.
 
