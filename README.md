@@ -15,17 +15,17 @@ Record { state: "North Carolina", agency_type: "City", agency_name: "Durham Poli
 * [U] Update the record field "q1" from "Yes" to "No"
 * [D] Delete the created record
 
-#### Testing
+### Testing
 To run tests, execute "cargo test" command on the terminal.
 
-#### How to run
+### How to run
 Once in the rust-cli-sqlite directory, execute "cargo run" command on the terminal.
 
-#### Project Dependencies:
+### Project Dependencies:
 * reqwest = "0.11"
 * rusqlite = "0.25.0"
 
-#### Use of GitHub Copilot
+### Use of GitHub Copilot
 As a brand new Rustacean, I leaned into GitHub copilot to guide me throughout the development process. I prompted GitHub Copitlot autocomplete by writing prompts through commentary. In addition, I used GithHub Copilot Chat to help me write some of the CRUD operation functions in lib.rs and ensure I was able to call them from my main.rs file.
 
 ## Instructions: Downloading the Rust Binary
