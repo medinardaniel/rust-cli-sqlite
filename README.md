@@ -5,7 +5,7 @@
 ![test workflow](https://github.com/medinardaniel/rust-cli-sqlite/actions/workflows/rust_test.yml/badge.svg)
 
 ## Project Description
-In this project, I perform CRUD operations using Rust in a SQLite database HateCrimesDB.
+In this project, I perform CRUD operations using Rust in a SQLite database HateCrimesDB. Find a video explanation of the project here: https://www.youtube.com/watch?v=HAasCTtCWFA
 
 I perform the following queries:
 * [C] Create the following new record in the dataset:
